@@ -1,4 +1,4 @@
-PRINTF PROJECT
+##PRINTF PROJECT
 
 This project is a collaborative effort by Ian Anthony and Grace Were to implement our own version of the printf function in C.
 
