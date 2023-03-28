@@ -1,64 +1,41 @@
-README.md
+PRINTF PROJECT
 
-0x11. C - printf team project
+This project is a collaborative effort by Ian Anthony and Grace Were to implement our own version of the printf function in C.
 
-Group Project:                                                                      
-                                                                                    
-0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm
- a Spur for life                                                                    
-Write a function that produces output according to a format.                        
-                                                                                    
-                                                                                    
-1. Education is when you read the fine print. Experience is what you get if you don'
-t                                                                                   
-Handle the following conversion specifiers:
+DESCRIPTION
 
-2. With a face like mine, I do better in print                                      
-Handle the following custom conversion specifiers:                                  
-                                                                                    
-3. What one has not experienced, one will never understand in print                 
-Handle the following conversion specifiers:                                         
-                                                                                    
-4. Nothing in fine print is ever good news                                          
-Use a local buffer of 1024 chars in order to call write as little as possible.      
-                                                                                    
-5. My weakness is wearing too much leopard print                                    
-Handle the following custom conversion specifier:                                   
-                                                                                    
-6. How is the world ruled and led to war? Diplomats lie to journalists and believe t
-hese lies when they see them in print                                               
-Handle the following conversion specifier: p.                                       
-                                                                                    
-7. The big print gives and the small print takes away                               
-Handle the following flag characters for non-custom conversion specifiers:          
-                                                                                    
-8. Sarcasm is lost in print                                                         
-Handle the following length modifiers for non-custom conversion specifiers:         
-                                                                                    
-l                                                                                   
-h                                                                                   
-Conversion specifiers to handle: d, i, u, o, x, X                                   
-                                                                                    
-9. Print some money and give it to us for the rain forests                          
-Handle the field width for non-custom conversion specifiers.                        
-                                                                                    
-10. The negative is the equivalent of the composer's score, and the print the perfor
-mance                                                                               
-Handle the precision for non-custom conversion specifiers.                          
-                                                                                    
-11. It's depressing when you're still around and your albums are out of print       
-Handle the 0 flag character for non-custom conversion specifiers.                   
-                                                                                    
-12. Every time that I wanted to give up, if I saw an interesting textile, print what
- ever, suddenly I would see a collection                                            
-Handle the - flag character for non-custom conversion specifiers.                   
-                                                                                    
-13. Print is the sharpest and the strongest weapon of our party                     
-Handle the following custom conversion specifier:                                   
-                                                                                    
-14. The flood of print has turned reading into a process of gulping rather than savo
-ring                                                                                
-Handle the following custom conversion specifier:                                   
-                                                                                    
-15. *                                                                               
-All the above options work well together. 
+The printf function is a standard library function in C that allows you to format and print text to the console. Our implementation aims to replicate the basic functionality of the standard printf function, including support for various format specifiers such as %s, %d, %c, etc.
+
+USAGE
+
+To use our printf function, simply include the main.h header file in your C code. Once done, call the printf function, passing in any desired format specifiers and arguments.
+Here's an example usage:
+
+#include main.h
+
+int main()
+
+{
+
+    int num = 42;
+    char str[] = "hello";
+    printf("The answer is %d and the string is %s", num, str);
+    return 0;
+
+}
+
+This will output the following to the console:
+
+    The answer is 42 and the string is hello.
+
+IMPLEMENTATION DETAILS
+
+Our printf function is implemented using a combination of va_arg, va_list, and va_start macros from the standard stdarg.h header file. We also make use of various string manipulation functions such as strlen and strcat to handle the formatting of strings.
+
+CONTACT INFORMATION
+
+Feel free to reach out to graciewere@gmail.com or iantonyochola@gmail.com, if you find a bug or have an idea for a new feature.
+
+LICENSE
+
+MIT License.
